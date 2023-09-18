@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parent {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1604182049604-4a9d97a854d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+.child {
+    height: 300px;
+    width: 550px;
+    display: flex;
+    transition: background-color 0.3s ease;
+    font-size:medium;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* box-shadow: -15px 20px 0px darkgreen */
+}
+
+#c1, #c2 {
+    height: 300px;
+    width: calc(550px / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border:2px solid darkgreen;
+    color: white;
+    letter-spacing:1px;
+    
+}
+
+#c2 {
+    padding-top: 10px;
+}
+
+label {
+    margin-bottom: 12px;
+}
+
+#button {
+    background-color:forestgreen;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input {
+    border: 2px solid green;
+}
+
+#c1:hover {
+    background-color: forestgreen;
+}
+
+#c2:hover {
+    background-color:forestgreen;
+    #button {
+        background-color:rgba(0,0,0,0.5);
+        color: #fff;
+        border: 1px solid black;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;}
+}
